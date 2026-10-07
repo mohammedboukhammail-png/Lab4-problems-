@@ -1,9 +1,10 @@
-
+package problem1
 import java.util.Scanner;
 public class Sales
 {
     public static void main(String[] args)
     {
+        System.out.println("=== LE PROGRAMME DÉMARRE ===");
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the number of salespeople: ");
         int numPeople = scan.nextInt();
