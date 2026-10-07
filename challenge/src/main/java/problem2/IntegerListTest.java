@@ -1,6 +1,7 @@
 package problem2;
 
 import java.util.Scanner;
+
 public class IntegerListTest
 {
     static IntegerList list = new IntegerList(10);
@@ -19,6 +20,8 @@ public class IntegerListTest
             printMenu();
             choice = scan.nextInt();
         }
+       
+        
     }
     //--------------------------------------
 // Do what the menu item calls for
@@ -40,6 +43,17 @@ public class IntegerListTest
             case 2:
                 list.print();
                 break;
+            case 3: 
+                System.out.println("enter the new value you want to add");
+                int newValue = scan.nextInt();
+                list.addElement(newValue);
+                break;
+            case 4:
+                System.out.println("enter the new value you want to remove");
+                int valueToRemove = scan.nextInt();
+                list.removeFirst(valueToRemove);
+                break; 
+                
             default:
                 System.out.println("Sorry, invalid choice");
         }
@@ -48,7 +62,8 @@ public class IntegerListTest
 // Print the user's choices
 //----------------------------
     public static void printMenu()
-    {
+    {   
+
         System.out.println("\n Menu ");
         System.out.println(" ====");
         System.out.println("0: Quit");
