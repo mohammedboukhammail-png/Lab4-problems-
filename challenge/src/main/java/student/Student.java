@@ -19,20 +19,9 @@ public class Student extends Person {
         nextId++;
     }
     public String getFullName() {
-        return String.format("%s, %s", this.secondName, this.firstName);
+        return String.format("%s, %s", this.secondName.uppercase(), this.firstName);
     }
     public String getCne(){
         return this.cne;
     }
-
-
-    }
-
-//    // Getters
-//
-//
-//    // Setters
-//
-//
-
-//
+}
